@@ -1,0 +1,4 @@
+---
+installed_packages:
+  - "java-{{ java_version }}-openjdk"
+  - "java-{{ java_version }}-openjdk-devel"

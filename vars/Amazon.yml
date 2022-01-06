@@ -1,0 +1,3 @@
+---
+installed_packages:
+  - "java-{{ java_version }}-amazon-corretto.x86_64"

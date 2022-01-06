@@ -1,0 +1,15 @@
+---
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: "include vars"
+      include_vars:
+        file: ../../defaults/main.yml
+    - name: Check java version
+      command: java -version
+      register: output
+    - name: Assert that openjdk is installed
+      assert:
+        that:
+        - "'openjdk version \"{{ java_version }}' in output.stderr"
