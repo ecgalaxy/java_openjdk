@@ -61,6 +61,7 @@ License
 -------
 
 Copyright the European Union 2022.
+
 Licensed under the EUPL-1.2 or later.
 
 Author Information

@@ -23,4 +23,4 @@ galaxy_info:
     - jdk
     - openjdk
 dependencies:
-  - role: ecgalaxy.bootstrap
+  - ecgalaxy.bootstrap
