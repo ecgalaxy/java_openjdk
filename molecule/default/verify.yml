@@ -4,12 +4,12 @@
   gather_facts: false
   tasks:
     - name: "include vars"
-      include_vars:
+      ansible.builtin.include_vars:
         file: ../../defaults/main.yml
     - name: Check java version
-      command: java -version
+      ansible.builtin.command: java -version
       register: output
     - name: Assert that openjdk is installed
-      assert:
+      ansible.builtin.assert:
         that:
         - "'openjdk version \"{{ java_version }}' in output.stderr"

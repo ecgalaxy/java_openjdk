@@ -4,7 +4,7 @@
   tasks:
     # https://github.com/debuerreotype/debuerreotype/issues/10
     - name: Create missing man directory
-      file:
+      ansible.builtin.file:
         path: /usr/share/man/man1
         state: directory
         owner: root

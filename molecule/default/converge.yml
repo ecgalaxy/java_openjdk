@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: "Include java_openjdk"
-      include_role:
+      ansible.builtin.include_role:
         name: "java_openjdk"
   environment:
     http_proxy: "{{ lookup('env', 'http_proxy') }}"

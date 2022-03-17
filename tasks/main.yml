@@ -1,14 +1,13 @@
 ---
-
 - name: Include OS-specific variables
-  include_vars: "{{ ansible_os_family }}.yml"
+  ansible.builtin.include_vars: "{{ ansible_os_family }}.yml"
 
 - name: Include OS-specific variables (Amazon Linux)
-  include_vars: "{{ ansible_distribution }}.yml"
+  ansible.builtin.include_vars: "{{ ansible_distribution }}.yml"
   when: ansible_distribution == 'Amazon'
 
 - name: Install Java OpenJDK
-  package:
+  ansible.builtin.package:
     name: "{{ installed_packages }}"
     state: present
   become: true
