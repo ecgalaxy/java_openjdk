@@ -11,9 +11,9 @@ None.
 Role Variables
 --------------
 
-`java_version`: 11
+- `java_version`: 11
 
-The list of possible values per each system is the following:
+The list of possible values per platform is the following:
 
 Amazon linux 2: 
 - 1.7.0

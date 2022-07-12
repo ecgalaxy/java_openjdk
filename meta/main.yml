@@ -1,26 +1,26 @@
 ---
 galaxy_info:
-  name: java_openjdk
   author: ecgalaxy
   description: Java OpenJDK
   company: European Commission
   license: EUPL-1.2
-  min_ansible_version: 2.5
+  min_ansible_version: "2.5"
   platforms:
     - name: Amazon Linux 2
       versions:
         - all
     - name: EL
       versions:
-        - 7
-        - 8
+        - "7"
+        - "8"
     - name: Ubuntu
       versions:
         - bionic
         - focal
+        - jammy
   galaxy_tags:
     - java
     - jdk
     - openjdk
 dependencies:
-  - ecgalaxy.bootstrap
+  - role: ecgalaxy.bootstrap
