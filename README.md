@@ -13,32 +13,37 @@ Role Variables
 
 - `java_version`: 11
 
-The list of possible values per platform is the following:
+Available values per platform:
 
-Amazon linux 2: 
+Amazon Linux 2
+
 - 1.7.0
 - 1.8.0
 - 11
 - 17
 
-Rhel 7: 
+RHEL 7
+
 - 1.7.0
 - 1.8.0
 - 11
 - latest
 
-Rhel 8: 
+RHEL 8
+
 - 1.8.0
 - 11
 - 17
 - latest
 
-Ubuntu 18.04:
+Ubuntu 18.04
+
 - 8
 - 11
 - 17
 
-Ubuntu 20.04:
+Ubuntu 20.04
+
 - 8
 - 11
 - 13
@@ -48,13 +53,14 @@ Ubuntu 20.04:
 Dependencies
 ------------
 
-* ecgalaxy.bootstrap
+* optional: ecgalaxy.bootstrap
 
 Example Playbook
 ----------------
 
     - hosts: all
       roles:
+        - ecgalaxy.bootstrap
         - ecgalaxy.java_openjdk
 
 License

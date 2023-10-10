@@ -1,6 +1,8 @@
 ---
 - name: Prepare
   hosts: all
+  roles:
+    - role: ecgalaxy.bootstrap
   tasks:
     # https://github.com/debuerreotype/debuerreotype/issues/10
     - name: Create missing man directory
