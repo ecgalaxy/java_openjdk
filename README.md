@@ -22,13 +22,6 @@ Amazon Linux 2
 - 11
 - 17
 
-RHEL 7
-
-- 1.7.0
-- 1.8.0
-- 11
-- latest
-
 RHEL 8
 
 - 1.8.0
