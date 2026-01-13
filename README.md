@@ -1,7 +1,7 @@
 ECGALAXY java_openjdk role
 ===========================
 
-This Ansible role installs Java OpenJDK (default Java version: 11).
+This Ansible role installs Java OpenJDK (default Java version: 17).
 
 Requirements
 ------------
@@ -11,7 +11,7 @@ None.
 Role Variables
 --------------
 
-- `java_version`: 11
+- `java_version`: 17
 
 Available values per platform:
 
@@ -26,7 +26,7 @@ Amazon Linux 2023
 - 11
 - 17
 - 21
-- 22
+- 25
 
 RHEL 8 & 9
 
@@ -34,7 +34,7 @@ RHEL 8 & 9
 - 11
 - 17
 - 21
-- latest
+- 25
 
 Ubuntu 18.04
 
@@ -46,8 +46,6 @@ Ubuntu 20.04
 
 - 8
 - 11
-- 13
-- 16
 - 17
 - 21
 
@@ -56,9 +54,8 @@ Ubuntu 22.04
 - 8
 - 11
 - 17
-- 18
-- 19
 - 21
+- 25
 
 Ubuntu 24.04
 
@@ -66,6 +63,7 @@ Ubuntu 24.04
 - 11
 - 17
 - 21
+- 25
 
 Dependencies
 ------------
@@ -84,6 +82,10 @@ One-liner
 ---------
 
     bash <(curl -s https://code.europa.eu/-/snippets/1/raw/main/ansible-role.sh) ecgalaxy.java_openjdk
+
+To install a specific JDK, set the `java_version`; for instance to install OpenJDK 25 (if supported):
+
+    bash <(curl -s https://code.europa.eu/-/snippets/1/raw/main/ansible-role.sh) ecgalaxy.java_openjdk --extra-vars '{"java_version":"25"}'
 
 See [ansible-role](https://code.europa.eu/-/snippets/1) for instructions.
 

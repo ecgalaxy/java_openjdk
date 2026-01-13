@@ -1,5 +1,10 @@
 # Releases
 
+## 1.2.x
+
+- JDK 17 set as default.
+- JDK 25 support documented.
+
 ## 1.1.x
 
 - Amazon Linux 2023, RHEL 9 and Ubuntu 24.04 LTS support added.
